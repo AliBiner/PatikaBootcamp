@@ -7,10 +7,10 @@ public class Flight {
     private float distance;
 
     // Price per kilometer (TL per km)
-    private final float pricePerKm;
+    private final float PRICE_PER_KM;
 
     // Constructor - gets distance from user and sets price per km
-    public Flight( float pricePerKm) {
+    public Flight( float PRICE_PER_KM) {
         Scanner scanner = new Scanner(System.in);
 
         // Ask the user to enter a positive distance (in kilometers)
@@ -20,7 +20,7 @@ public class Flight {
         }while (distance<=0f); // Repeat if distance is 0 or negative
 
         // Set price per kilometer
-        this.pricePerKm = pricePerKm;
+        this.PRICE_PER_KM = PRICE_PER_KM;
     }
 
     // Getter - return the flight distance
@@ -29,12 +29,12 @@ public class Flight {
     }
 
     // Getter - return the price per kilometer
-    public float getPricePerKm() {
-        return pricePerKm;
+    public float getPRICE_PER_KM() {
+        return PRICE_PER_KM;
     }
 
     // Calculate total flight price (distance × price per km)
     public float calcFlightPrice(){
-        return distance * pricePerKm;
+        return distance * PRICE_PER_KM;
     }
 }
