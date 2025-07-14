@@ -39,7 +39,7 @@ Java ile kullanıcıların manavdan almış oldukları ürünlerin kilogram değ
 - getPricePerKg() // sınıfın pricePerKg niteliğini getirir.
 - getWeight() // sınıfın weight niteliğini getirir.
 - setWeight() // sınıfın weight 
-- calculateTotal() // her ürünün sahip olduğu weight ile pricePerKg değerini çarpar ve geriye float tipinde bir değer döner.
+- calculateTotal() // Product nesnesinin sahip olduğu weight ile pricePerKg değerini çarpar ve geriye float tipinde bir değer döner.
 
 4- GreengrocerCase Sınıfının nitelikleri:
 ##### Sabitler
