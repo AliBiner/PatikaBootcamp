@@ -20,5 +20,8 @@ public class Main {
 
         // Output
         System.out.println("Vücut kitle indeksiniz: " + bmi);
+
+        // Close scanner
+        scanner.close();
     }
 }
