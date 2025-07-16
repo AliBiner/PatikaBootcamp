@@ -13,7 +13,5 @@ public class Main {
 
         Employe employe1 = new Employe("Okan","Erturan",100,2000,45,LocalDate.of(1985,1,1));
 
-
-
     }
 }
