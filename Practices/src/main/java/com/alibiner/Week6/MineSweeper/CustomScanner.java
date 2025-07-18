@@ -1,4 +1,4 @@
-package com.alibiner.Week3.MineSweeper;
+package com.alibiner.Week6.MineSweeper;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
