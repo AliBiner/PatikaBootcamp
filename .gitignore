@@ -1,3 +1,5 @@
 /Practices/target
 /.idea
-/Practices/
+.DS_Store
+.DS_Store?
+**/.DS_Store
