@@ -46,10 +46,10 @@ public class Person implements IPerson {
     public void setAge(int age) throws Exception {
         try {
             if (age < 0)
-                throw new NegativeException("Yaş için eksi değer giremezsiniz. ");
+                throw new IllegalArgumentException("Yaş için eksi değer giremezsiniz. ");
             else
                 this.age = age;
-        }catch (NegativeException e) {
+        }catch (IllegalArgumentException e) {
 
         }
 
