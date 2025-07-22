@@ -53,8 +53,10 @@ public class Main {
         //Filter category
         List<Movie> filteredMovieList = new ArrayList<>();
 
+        String category = "Action";
+
         for (Movie movie : movieList)
-            movie.filterByCategory(filteredMovieList,"Drama");
+            movie.filterByCategory(filteredMovieList,category);
 
         for (Movie movie : filteredMovieList)
             System.out.println(movie);
@@ -65,7 +67,7 @@ public class Main {
         List<Movie> filteredMovieList1 = new ArrayList<>();
 
         filteredMovieList1 =
-                movieList.stream().filter(movie -> "Drama".contains(movie.getCategory())).toList();
+                movieList.stream().filter(movie -> category.contains(movie.getCategory())).toList();
 
         for (Movie movie : filteredMovieList1)
             System.out.println(movie);
