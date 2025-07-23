@@ -27,3 +27,16 @@ Beklenen Çıktı:
     m = 1
     
     r = 1
+
+# Cevap:
+
+Çıktı:
+
+    Bir metin giriniz: ali biner
+    a = 1
+    b = 1
+    e = 1
+    i = 2
+    l = 1
+    n = 1
+    r = 1
