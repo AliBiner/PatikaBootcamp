@@ -19,5 +19,9 @@
 - MyArrayList (I created my own array list class.)
 
 3. Main Projects:
-- Minesweeper (It was a nice project that was challenging algorithmically.)
-- Library Management System (A project with given requirements where I used OOP, Data Structures, Multi-Layer Architecture, and generic structures.)
+- Minesweeper 
+  - It was a nice project that was challenging algorithmically.
+  - 
+- Library Management System 
+  - A project with given requirements where I used OOP, Data Structures, Multi-Layer Architecture, and generic structures. 
+  - https://github.com/AliBiner/LibraryManagementSystem 
