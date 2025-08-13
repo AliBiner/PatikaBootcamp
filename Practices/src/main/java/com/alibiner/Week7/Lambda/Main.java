@@ -23,7 +23,7 @@ public class Main {
         numbers.replaceAll(n->n*2);
 
         // Lambda kullanarak yazdırma
-        numbers.forEach(System.out::println);
+        numbers.forEach(number -> System.out.println(number));
 
     }
 
