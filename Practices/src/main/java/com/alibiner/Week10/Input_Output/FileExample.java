@@ -215,6 +215,23 @@ public class FileExample {
         }
 
 
+        if (Files.isWritable(pathFilesFile)) {
+            try {
+                Files.write(pathFilesFile, "Ben Ali Biner".getBytes(), StandardOpenOption.APPEND);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }else
+            System.out.println("Dosya yazılabilir değil.");
 
+        if (Files.isReadable(pathFilesFile)){
+            try {
+                String str = Files.readString(pathFilesFile);
+                System.out.println( str);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }else
+            System.out.println("Dosya okunabilir değil.");
     }
 }
