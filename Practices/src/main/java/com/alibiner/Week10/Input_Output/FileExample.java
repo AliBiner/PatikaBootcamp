@@ -7,9 +7,20 @@ import java.io.IOException;
 import java.nio.file.*;
 import java.util.Map;
 import java.util.Properties;
+import java.util.Scanner;
 
 public class FileExample {
     public static void main(String[] args) {
+
+        System.out.println("----------------System.Logger---------------------------");
+
+        System.Logger logger = System.getLogger("test");
+
+        logger.log(System.Logger.Level.INFO,"log alındı");
+
+        System.out.println("logger.getName() = " + logger.getName());
+
+        System.out.println("logger.isLoggable(System.Logger.Level.INFO) = " + logger.isLoggable(System.Logger.Level.INFO));
 
         System.out.println("System.identityHashCode(new FileExample()) = " + System.identityHashCode(new FileExample()));
 
@@ -51,15 +62,7 @@ public class FileExample {
             System.out.println( "key: " + key + " - value: " + envs.get(key));
 
         System.out.println();
-        System.out.println("----------------System.Logger---------------------------");
 
-        System.Logger logger = System.getLogger("test");
-
-        logger.log(System.Logger.Level.INFO,"log alındı");
-
-        System.out.println("logger.getName() = " + logger.getName());
-
-        System.out.println("logger.isLoggable(System.Logger.Level.INFO) = " + logger.isLoggable(System.Logger.Level.INFO));
 
 
         System.out.println();
@@ -233,5 +236,9 @@ public class FileExample {
             }
         }else
             System.out.println("Dosya okunabilir değil.");
+
+
+
+
     }
 }

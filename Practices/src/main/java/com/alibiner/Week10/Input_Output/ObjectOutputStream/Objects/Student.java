@@ -1,14 +1,31 @@
 package com.alibiner.Week10.Input_Output.ObjectOutputStream.Objects;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.util.Objects;
 
 public class Student implements Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
+
     private String name;
+
     private String lastname;
 
     private transient int age;
+
     private transient String gender;
+
+    private transient String test;
+
+    public String getTest() {
+        return test;
+    }
+
+    public void setTest(String test) {
+        this.test = test;
+    }
 
     public Student(String name, String lastname, int age, String gender) {
         this.name = name;
