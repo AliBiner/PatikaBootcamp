@@ -1,0 +1,8 @@
+[2025-08-28T18:23:45.627195] [INFO] [Uygulama Başlatıldı!]
+[2025-08-28T18:23:46.557023] [ERROR] [Kullanıcı adı hatalı!]
+[2025-08-28T18:23:46.558206] [ERROR] [Uygulama Kapatılıyor...]
+[2025-08-28T18:24:00.727459] [INFO] [Uygulama Başlatıldı!]
+[2025-08-28T18:24:02.496468] [INFO] [Giriş Başarılı!]
+[2025-08-28T18:24:18.307787] [INFO] [Uygulama Kapatılıyor...]
+[2025-08-28T18:24:21.113436] [INFO] [Uygulama Başlatıldı!]
+[2025-08-28T18:24:25.429159] [INFO] [Giriş Başarılı!]
