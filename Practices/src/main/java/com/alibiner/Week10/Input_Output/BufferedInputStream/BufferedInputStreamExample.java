@@ -32,14 +32,11 @@ public class BufferedInputStreamExample {
         System.out.println("--------------------------------------");
         try(BufferedInputStream bis = new BufferedInputStream(new FileInputStream(sourcePath.toFile()));
             BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(destinationPath.toFile()))) {
-
-            byte[] buffer = new byte[300];
+            byte[] buffer = new byte[8192];
             int read;
             while ((read = bis.read(buffer))!=-1) {
-                System.out.println(read);
                 bos.write(buffer, 0, read);
                 bos.flush();
-
             }
 
         } catch (FileNotFoundException e) {
