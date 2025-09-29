@@ -34,7 +34,7 @@ public class FileExample {
         System.out.println("------------------ get property-------------------------");
 
         //System.exit(0);
-        System.out.println("System.getProperty(\"file.separator\") = " + System.getProperty("file.separator"));
+        System.out.println("System.getProperty(\"file.separator\") = " + System.getProperty("file.separator")); //
         //System.out.println("System.clearProperty(\"file.separator\") = " + System.clearProperty("file.separator"));
         System.out.println("System.getProperty(\"file.separator\") = " + System.getProperty("file.separator"));
 
@@ -51,7 +51,6 @@ public class FileExample {
         System.out.println("-------------------------------------------");
         Console console = System.console();
 
-        console.println("test");
 
         System.out.println();
         System.out.println("----------------- all environments--------------------------");
