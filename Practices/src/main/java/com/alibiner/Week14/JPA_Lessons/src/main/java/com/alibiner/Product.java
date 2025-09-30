@@ -1,5 +1,6 @@
 package com.alibiner;
 
+import java.util.*;
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -42,6 +43,14 @@ public class Product {
     @ManyToOne
     @JoinColumn(name = "product_category_id", referencedColumnName = "category_id")
     private Category category;
+
+    @ManyToMany
+    @JoinTable(
+            name = "product_colors",
+            joinColumns = @JoinColumn(name = "product_id"),
+            inverseJoinColumns = @JoinColumn(name = "color_id")
+    )
+    private List<Color> colors;
 
 
     @Override
