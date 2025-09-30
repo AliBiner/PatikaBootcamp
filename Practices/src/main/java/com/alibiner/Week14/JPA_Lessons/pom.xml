@@ -14,12 +14,13 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
-        <!-- Jakarta Persistence API -->
-        <dependency>
-            <groupId>jakarta.persistence</groupId>
-            <artifactId>jakarta.persistence-api</artifactId>
-            <version>3.2.0</version>
-        </dependency>
+
+<!--        &lt;!&ndash; Jakarta Persistence API &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>jakarta.persistence</groupId>-->
+<!--            <artifactId>jakarta.persistence-api</artifactId>-->
+<!--            <version>3.2.0</version>-->
+<!--        </dependency>-->
 
         <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core -->
         <dependency>
@@ -33,6 +34,12 @@
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>42.7.8</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.38</version>
         </dependency>
     </dependencies>
 </project>
