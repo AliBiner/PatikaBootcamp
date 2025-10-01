@@ -31,7 +31,15 @@ public class Author {
     @Column(name = "author_contry", length = 50, nullable = false)
     private String country;
 
-    @OneToMany(mappedBy = "author")
+    @OneToMany(mappedBy = "author", fetch = FetchType.LAZY)
     private List<Book> books;
 
+    @Override
+    public String toString() {
+        return "Author{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", birthDate=" + birthDate +
+                ", country='" + country ;
+    }
 }

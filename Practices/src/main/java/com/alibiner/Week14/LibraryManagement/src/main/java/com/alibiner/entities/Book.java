@@ -50,4 +50,18 @@ public class Book {
             inverseJoinColumns = @JoinColumn(name = "category_id")
     )
     private List<Category> categories;
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", publicationYear=" + publicationYear +
+                ", stock=" + stock +
+//                ", author=" + author +
+                ", publisher=" + publisher +
+//                ", bookBorrowing=" + bookBorrowing +
+                ", categories=" + categories +
+                '}';
+    }
 }
