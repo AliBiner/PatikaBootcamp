@@ -94,8 +94,6 @@ Bir kütüphane yönetim sistemi tasarlamanı istiyoruz. Bu kütüphane sistemin
 
 # İster UML Analizi
 
-#### Detaylı inceleyebileceğiniz UML için <a href="UML.html"> tıklayınız </a>
-
 ![UML.png](UML.png)
 
 ---
