@@ -1,5 +1,6 @@
 package com.alibiner.entities;
 
+import java.util.*;
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -27,7 +28,7 @@ public class User {
     @Column(name = "user_birth_date", nullable = false)
     private LocalDate birthDate;
 
-
-    //Todo - Relation to BookBorrowing
+    @OneToMany(mappedBy = "user")
+    private List<BookBorrowing> bookBorrowings;
 
 }
