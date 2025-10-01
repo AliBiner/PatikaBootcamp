@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/Practices/pom.xml" />
         <option value="$PROJECT_DIR$/Practices/src/main/java/com/alibiner/Week14/JPA_Lessons/pom.xml" />
+        <option value="$PROJECT_DIR$/Practices/src/main/java/com/alibiner/Week14/LibraryManagement/pom.xml" />
       </list>
     </option>
   </component>

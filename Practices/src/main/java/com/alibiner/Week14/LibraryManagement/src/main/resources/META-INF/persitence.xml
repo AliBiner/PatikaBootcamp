@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence version="3.0"
+             xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence
+                                 https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
+
+    <!-- Persistence Unit: market -->
+    <persistence-unit name="library_management" transaction-type="RESOURCE_LOCAL">
+
+        <properties>
+            <!-- Veritabanı bağlantı bilgileri -->
+            <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/library_management"/>
+            <property name="jakarta.persistence.jdbc.user" value="postgres"/>
+            <property name="jakarta.persistence.jdbc.password" value="123456"/>
+
+            <!-- Hibernate Dialect (PostgreSQL için) -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+
+            <!-- Konsolda SQL çıktısını göster -->
+            <property name="hibernate.show_sql" value="true"/>
+            <!-- SQL çıktısını düzenli (formatlı) göster -->
+            <property name="hibernate.format_sql" value="true"/>
+
+            <!-- DDL (tablo oluşturma stratejisi)
+                 validate : sadece var olan tabloları doğrular
+                 update   : tablo yoksa oluşturur, varsa günceller
+                 create   : her çalıştırmada tabloyu siler, yeniden oluşturur
+                 create-drop : uygulama kapanınca tabloyu da siler -->
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+
+            <!-- Cache ayarları (opsiyonel, ileri seviye) -->
+            <!-- <property name="hibernate.cache.use_second_level_cache" value="true"/> -->
+            <!-- <property name="hibernate.cache.use_query_cache" value="true"/> -->
+        </properties>
+    </persistence-unit>
+</persistence>
