@@ -1,5 +1,6 @@
 package com.alibiner.entities;
 
+import java.util.*;
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -29,5 +30,6 @@ public class Publisher {
     @Column(name = "publisher_address", nullable = false)
     private String address;
 
-    //Todo Relate Book
+    @OneToMany(mappedBy = "publisher")
+    private List<Book> books;
 }

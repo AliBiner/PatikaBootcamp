@@ -1,5 +1,6 @@
 package com.alibiner.entities;
 
+import java.util.*;
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -24,4 +25,7 @@ public class Category {
 
     @Column(name = "category_description")
     private String description;
+
+    @ManyToMany(mappedBy = "categories")
+    private List<Book> books;
 }

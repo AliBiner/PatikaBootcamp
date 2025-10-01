@@ -1,5 +1,6 @@
 package com.alibiner.entities;
 
+import java.util.*;
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -31,4 +32,6 @@ public class BookBorrowing {
     @JoinColumn(name = "book_borrowing_user_id", referencedColumnName = "user_id")
     private User user;
 
+    @OneToMany(mappedBy = "bookBorrowing")
+    private List<Book> books;
 }

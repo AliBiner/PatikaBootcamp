@@ -1,5 +1,6 @@
 package com.alibiner.entities;
 
+import java.util.*;
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -30,5 +31,7 @@ public class Author {
     @Column(name = "author_contry", length = 50, nullable = false)
     private String country;
 
-    //Todo - Relate Book
+    @OneToMany(mappedBy = "author")
+    private List<Book> books;
+
 }
