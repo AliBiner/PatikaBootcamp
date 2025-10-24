@@ -17,8 +17,3 @@
 2. Important Practices:
 - Salary Calculator (It was the first practice where I used OOP.)
 - MyArrayList (I created my own array list class.)
-
-3. Main Projects:
-- Library Management System 
-  - I used OOP, Data Structures, Multi-Layer Architecture, Generic Structures, Dependency Injection, Mapper.
-  - https://github.com/AliBiner/LibraryManagementSystem 
