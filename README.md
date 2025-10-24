@@ -13,6 +13,47 @@
 - Collections
 - Maps
 - Generic Structures
+- Enum
+- Record
+- Sealed Class
+- Inner Class
+- Lambda Expressions
+- Functional Interface
+- Method Reference
+- Optional<T>
+- Intermediate and Terminal Operations
+- SQL
+- Exceptions
+- Custom Exceptions
+- Throw
+- Try-Catch (Exception Handle)
+- Localization
+- Input/Output (File, Object, Buffered, Log)
+- JDBC
+- Spring Boot
+  - Maven
+  - Dependencies
+  - ORM
+  - JPA
+  - Entity
+  - Transaction
+  - Entity Relation, Fetch, Cascade
+  - JPQL
+  - Hibernate
+  - HQL
+  - n Layer Architecture
+  - Dependency Injection
+  - What is Spring Framework
+  - What is Spring Boot
+  - Rest Controller
+  - Service
+  - Repository
+  - IoC Container
+  - Bean
+  - REST API
+  - DTO
+  - Validator
+- Microservice Architecture
 
 2. Important Practices:
 - Salary Calculator (It was the first practice where I used OOP.)
